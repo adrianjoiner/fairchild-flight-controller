@@ -12,6 +12,8 @@
 
 #include "ic2_scanner.h"
 #include <Wire.h>
+#include <Adafruit_BMP280.h> //include the Adafruit BMP280 library
+#include "MPU9250.h"
 
 
 void ic2_scanner() {
