@@ -11,8 +11,8 @@
                 "/Users/join310728/Library/Arduino15/packages/stm32duino/hardware/STM32F1/2019.2.28/**",
                 "/Users/join310728/Library/Arduino15/packages/stm32duino/hardware/STM32F1/2019.2.28/libraries/Wire",
                 "/Applications/Arduino.app/Contents/Java/libraries/MPU9250/src",
-                "/Applications/Arduino.app/Contents/Java/libraries//src"
-
+                "/Applications/Arduino.app/Contents/Java/libraries/src",
+                "/Applications/Arduino.app/Contents/Java/libraries/Adafruit_BMP280"
             ],
             "forcedInclude": [],
             "macFrameworkPath": [
