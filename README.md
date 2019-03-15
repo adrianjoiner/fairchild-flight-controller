@@ -14,3 +14,8 @@ Big multifile projects - use .cpp, small projects use .ino
 Something to be aware of when deconstructing other peoples code made of multiple .ino files as they appear to be missing a heap of imports and variable declarations etc.
 
 Don't mix and match
+
+
+# Design decisions
+- VS Code / Arduino plugin + Arduino IDE
+- Use __.ino__ files for main program and its functions. __.cpp__ if you need to create a library
