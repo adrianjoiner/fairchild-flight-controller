@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "/Applications/Arduino.app/Contents/Java/libraries/MPU9250"
+		},
+		{
+			"path": "/Users/join310728/dev/repos/me/fairchild"
 		}
 	],
 	"settings": {}
