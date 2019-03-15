@@ -2,6 +2,10 @@
 #include "Arduino.h"
 #include <Wire.h>
 
+// global constants
+byte BMP280_address=0x76;
+byte MPU9250_address=0x68;
+
 void setup() {  
  
   // Open a serial port for debug
@@ -16,6 +20,9 @@ void setup() {
   //    MPU9255 at 0x68
   //    BMP-280 at 0x76
   ic2_scanner();
+
+  
+
 
 
   
