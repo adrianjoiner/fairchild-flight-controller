@@ -73,7 +73,7 @@ void setup() {
   Serial.println("Waiting 3 seconds for MPU to settle down");
   delay(3000);
   Serial.println("Assuming sensor is level and stable, reading bias measurements");
-  
+  delay(1000);
 }
 
 void loop() {

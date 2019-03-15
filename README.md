@@ -19,3 +19,21 @@ Don't mix and match
 # Design decisions
 - VS Code / Arduino plugin + Arduino IDE
 - Use __.ino__ files for main program and its functions. __.cpp__ if you need to create a library
+
+
+# Connecting an STM32 to RC reciever using PPM
+[Info](https://www.youtube.com/watch?v=JFSFbSg0l2M&feature=youtu.be)
+ The video and examples use this library that needs to be places inside ~/Documents/Arduino/hardware/Arduino_STM32
+
+- Utilises STM32 input capture mode to calculate width of recieved pulses
+
+### Connections
+RX: GND > GND
+RX: VCC > 3.3v
+RX: PPM output, simgle wire >> A0 on STM32
+
+https://github.com/rogerclarkmelbourne/Arduino_STM32/archive/master.zip
+
+# STM32
+[Support site](http://www.stm32duino.com)
+https://github.com/rogerclarkmelbourne/Arduino_STM32/archive/master.zip
