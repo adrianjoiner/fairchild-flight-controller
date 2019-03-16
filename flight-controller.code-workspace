@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/Applications/Arduino.app/Contents/Java/libraries/Adafruit_BMP280"
+		},
+		{
+			"path": "/Applications/Arduino.app/Contents/Java/libraries/MPU9250"
+		}
+	],
+	"settings": {}
+}

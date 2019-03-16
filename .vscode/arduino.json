@@ -2,5 +2,6 @@
     "programmer": "AVRISP mkII",
     "board": "stm32duino:STM32F1:genericSTM32F103C",
     "configuration": "device_variant=STM32F103C8,upload_method=serialMethod,cpu_speed=speed_72mhz,opt=osstd",
-    "sketch": "fairchild-flight-controller.ino"
+    "sketch": "fairchild-flight-controller.ino",
+    "port": "/dev/cu.usbserial-A5XK3RJT"
 }
