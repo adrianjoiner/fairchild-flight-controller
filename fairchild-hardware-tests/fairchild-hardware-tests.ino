@@ -1,7 +1,9 @@
-#include "ic2_scan.ino"
+//#include "ic2_scan.ino"
 #include "Arduino.h"
 #include <Wire.h>
 #include "MPU9250.h"
+#include <Adafruit_BMP280.h> //include the Adafruit BMP280 library
+
 
 
 // global constants
@@ -33,9 +35,11 @@ void setup() {
   // Check for any connected sensors
   ic2_scan();
 
+  delay(5000);
+
   // Initialise the BMP280 barometer (altitude sensor)
   //Adafruit_BMP280 barometer;
-  if (!barometer.begin(BMP280_ADDRESS)) //check if you are able to read the sensor
+  if (!barometer.begin(BMP280_address)) //check if you are able to read the sensor
   {  
     Serial.println("SENSOR: unable to initialise BMP-280 barometer, sensor will be ignored.");
     barometerOnline = false;
@@ -89,6 +93,8 @@ void loop() {
     displayMpuReadings(mpu);
     Serial.println("\n============================\n");
   }
+
+
 }
 
 // Display current output of the barometer
@@ -116,30 +122,30 @@ void displayMpuReadings(MPU9250& _mpu)
   // display the data
   Serial.print("X-acc:");
   Serial.print(_mpu.getAccelX_mss(),6);
-  Serial.print("\t");
+  Serial.print("\t\t");
   Serial.print("Y-acc:");
   Serial.print(_mpu.getAccelY_mss(),6);
-  Serial.print("\t");
+  Serial.print("\t\t");
   Serial.print("Z-acc:");
   Serial.print(_mpu.getAccelZ_mss(),6);
   Serial.println("");
 
   Serial.print("X-gyro:");
   Serial.print(_mpu.getGyroX_rads(),6);
-  Serial.print("\t");
+  Serial.print("\t\t");
   Serial.print("Y-gyro:");
   Serial.print(_mpu.getGyroY_rads(),6);
-  Serial.print("\t");
+  Serial.print("\t\t");
   Serial.print("Z-gyro:");
   Serial.print(_mpu.getGyroZ_rads(),6);
   Serial.println("");
 
   Serial.print("X-mag:");
   Serial.print(_mpu.getMagX_uT(),6);
-  Serial.print("\t");
+  Serial.print("\t\t");
   Serial.print("Y-mag:");
   Serial.print(_mpu.getMagY_uT(),6);
-  Serial.print("\t");
+  Serial.print("\t\t");
   Serial.print("Z-mag:");
   Serial.print(_mpu.getMagZ_uT(),6);
 
