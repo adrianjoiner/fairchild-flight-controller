@@ -15,6 +15,9 @@ Something to be aware of when deconstructing other peoples code made of multiple
 
 Don't mix and match
 
+## Setting build output file / arduino.json settings
+[arduino.json settings](https://arduino.stackexchange.com/questions/45347/warning-when-verifying-sketch-with-vs-code)
+
 
 # Design decisions
 - VS Code / Arduino plugin + Arduino IDE
@@ -37,3 +40,9 @@ https://github.com/rogerclarkmelbourne/Arduino_STM32/archive/master.zip
 # STM32
 [Support site](http://www.stm32duino.com)
 https://github.com/rogerclarkmelbourne/Arduino_STM32/archive/master.zip
+
+## Connect STM32 to Nokia 5110
+Using forked [Adafruit-PCD8544-Nokia-5110-LCD-library](https://github.com/KenjutsuGH/Adafruit-PCD8544-Nokia-5110-LCD-library.git) which needs to be cloned into 
+
+
+[Nokia5110 lcd](https://lastminuteengineers.com/nokia-5110-lcd-arduino-tutorial/)

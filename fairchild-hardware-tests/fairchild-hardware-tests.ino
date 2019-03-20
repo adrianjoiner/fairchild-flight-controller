@@ -6,6 +6,7 @@
 
 
 
+
 // global constants
 const byte BMP280_address=0x76;
 const byte MPU9250_address=0x68;
@@ -20,6 +21,8 @@ void displayMpuReadings(MPU9250&);
 
 void setup() {  
  
+  // Screen is 14 chars wide
+
   // Open a serial port for debug and printing
   Serial.begin(9600);
   while(!Serial) {};

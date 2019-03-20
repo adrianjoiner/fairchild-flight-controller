@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "/Applications/Arduino.app/Contents/Java/libraries/MPU9250"
+		},
+		{
+			"path": "/Applications/Arduino.app/Contents/Java/libraries/Adafruit-PCD8544-Nokia-5110-LCD-library"
 		}
 	],
 	"settings": {}
