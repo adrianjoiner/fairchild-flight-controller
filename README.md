@@ -43,6 +43,7 @@ https://github.com/rogerclarkmelbourne/Arduino_STM32/archive/master.zip
 
 ## Connect STM32 to Nokia 5110
 Using forked [Adafruit-PCD8544-Nokia-5110-LCD-library](https://github.com/KenjutsuGH/Adafruit-PCD8544-Nokia-5110-LCD-library.git) which needs to be cloned into 
+[also here ](https://randomnerdtutorials.com/complete-guide-for-nokia-5110-lcd-with-arduino/) for example code
 
 
 [Nokia5110 lcd](https://lastminuteengineers.com/nokia-5110-lcd-arduino-tutorial/)

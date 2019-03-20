@@ -3,6 +3,11 @@
 #include <Wire.h>
 #include "MPU9250.h"
 #include <Adafruit_BMP280.h> //include the Adafruit BMP280 library
+#include <SPI.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_PCD8544.h>
+
+
 
 
 
@@ -16,11 +21,16 @@ bool mpuOnline = false;
 Adafruit_BMP280 barometer;
 MPU9250 mpu(Wire, MPU9250_address);
 
+static PCD8544 lcd;
+
+
 void displayBarometerReadings(Adafruit_BMP280&);
 void displayMpuReadings(MPU9250&);
 
 void setup() {  
- 
+  lcd.begin(84,48);
+  lcd.setCursor(0,0); // column, row
+  lcd.print("Hello World"); 
   // Screen is 14 chars wide
 
   // Open a serial port for debug and printing

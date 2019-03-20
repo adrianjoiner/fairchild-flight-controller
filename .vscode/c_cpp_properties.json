@@ -13,7 +13,7 @@
                 "/Applications/Arduino.app/Contents/Java/libraries/MPU9250/src",
                 "/Applications/Arduino.app/Contents/Java/libraries/src",
                 "/Applications/Arduino.app/Contents/Java/libraries/Adafruit_BMP280",
-                "/Applications/Arduino.app/Contents/Java/libraries/STM32_Nokia5110"
+                "/Applications/Arduino.app/Contents/Java/libraries/Adafruit-PCD8544-Nokia-5110-LCD-library"
 
             ],
             "forcedInclude": [],
